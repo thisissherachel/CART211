@@ -59,6 +59,7 @@ tr {
 }
 
 .blogheader {
+  color: white;
 }
 
 .blogentry {
@@ -69,15 +70,16 @@ button{
   text-align: center;
 }
 
-a { /* how should i organize this */
+a { /* how should i organize this button situation */
   text-decoration: none;
   font-family: courier;
+  color: white;
 }
 
 .source {
   background-color: rgba(255, 255, 255, 0.25);
   font-size: 12px;
-  font-weight: 300; /* doesn't work */
+  font-weight: 300; /* doesn't work?? */
   padding: 10px 30px 10px 30px;
   transition-duration: 0.4s;
 }
