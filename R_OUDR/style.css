@@ -40,7 +40,7 @@ p {
 }
 
 body {
-  background-image: url("/a-background-image.jpg");
+  background-image: url("a-background-image.jpg");
   background-size: cover;
   width: 50%;
   margin: auto;
