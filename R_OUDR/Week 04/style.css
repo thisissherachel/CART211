@@ -1,7 +1,20 @@
-
-
-
 header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#inprogress {
+  position: sticky;
+  background-color: rgba(255, 0, 0, 0.75);
+  color: white;
+  text-align: center;
+  font-family: courier;
+  font-style: italic;
+  float: left;
+  padding: 5px 30px;
+}
+
+#intro {
   background-color: white;
   width: 50%;
   margin: auto;
@@ -9,9 +22,6 @@ header {
   margin-bottom: 20px;
   text-align: center;
   font-family: courier;
-}
-
-.header {
   padding: 10px;
 }
 
@@ -34,7 +44,7 @@ p {
   font-size: 12px;
 }
 
-.blue {
+#blue {
   color: blue;
   font-size: 20px;
 }
@@ -52,17 +62,17 @@ tr {
 
 }
 
-.blog {
+#blog {
   background-color: MEDIUMTURQUOISE;
   padding: 50px;
   font-family: courier;
 }
 
-.blogheader {
+#blogheader {
   color: white;
 }
 
-.blogentry {
+#blogentry {
 }
 
 button{
@@ -76,7 +86,7 @@ a { /* how should i organize this button situation */
   color: white;
 }
 
-.source {
+#source {
   background-color: rgba(255, 255, 255, 0.25);
   font-size: 12px;
   font-weight: 300; /* doesn't work?? */
@@ -84,7 +94,7 @@ a { /* how should i organize this button situation */
   transition-duration: 0.4s;
 }
 
-.source:hover {
+#source:hover {
   background-color: rgba(255, 255, 255, 0.5);
   color: white;
 }
