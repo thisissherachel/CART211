@@ -40,7 +40,6 @@ h3 {
 }
 
 p {
-  color: black;
   font-size: 12px;
 }
 
@@ -51,15 +50,17 @@ p {
 
 body {
   background-image: url("a-background-image.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: repeat-y;
   width: 50%;
   margin: auto;
   text-align: center;
-  padding: 50px;
+  padding-top: 50px;
 }
 
-tr {
-
+table {
+  width: auto;
+  margin: auto;
 }
 
 #blog {
@@ -69,10 +70,13 @@ tr {
 }
 
 #blogheader {
-  color: white;
+  color: rgb(0, 74, 72);
+  padding-bottom: 30px;
 }
 
 #blogentry {
+  color: rgb(0, 74, 72);
+
 }
 
 button{
@@ -83,18 +87,68 @@ button{
 a { /* how should i organize this button situation */
   text-decoration: none;
   font-family: courier;
-  color: white;
+  color: rgb(0, 84, 82);
+  font-weight: 600;
 }
 
 #source {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 84, 82, 0.15);
   font-size: 12px;
   font-weight: 300; /* doesn't work?? */
-  padding: 10px 30px 10px 30px;
+  padding: 10px 30px;
   transition-duration: 0.4s;
 }
 
 #source:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: white;
+  background-color: rgba(0, 84, 82, 0.25);
 }
+
+#classwork {
+  background-color: DARKSEAGREEN;
+  padding: 50px;
+  font-family: courier;
+  margin-top: 50px;
+}
+
+#classworkheader {
+  color: rgb(25, 69, 34);
+  padding-bottom: 30px;
+}
+
+#classworkentry {
+  color: rgb(66, 110, 75);
+  padding-bottom: 50px;
+}
+
+#rainbowbutton {
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  font-size: 12px;
+  font-weight: 300; /* doesn't work?? */
+  padding: 10px 30px;
+  transition-duration: 0.4s;
+}
+
+  div.animation {
+    background-image: url("a-sad.png");
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: auto;
+
+    /* initiate animation */
+    animation-name: theSquare;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+  /* animation instructions  from to or % */
+  @keyframes theSquare {
+    0% {left:-100px; background-color:rgba(251,81,63)}
+    25% {left:0px; background-color:rgb(176,199,94);}
+    50% {left:100px; background-color:rgb(10,255,21);}
+    75% {left:0px; background-color:rgb(119,136,209);}
+    100% {left:-100px; background-color:rgb(164,70,252);}
+  }
