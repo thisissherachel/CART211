@@ -1,28 +1,23 @@
+
 header {
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
-}
-#inprogress {
-  position: sticky;
   background-color: rgba(255, 0, 0, 0.75);
   color: white;
   text-align: center;
   font-family: courier;
   font-style: italic;
-  float: left;
   padding: 5px 30px;
+  width: 250px;
 }
 
-#intro {
-  background-color: white;
-  width: 50%;
-  margin: auto;
-  padding: 25px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: courier;
-  padding: 10px;
+body {
+  background-image: url("images/background-image.jpg");
+  background-size: contain;
+  background-repeat: repeat-y;
+  margin: 0px;
+  bottom: 50px;
 }
 
 h1 {
@@ -33,6 +28,7 @@ h1 {
 h2 {
   font-size: 20px;
   font-style: italic;
+  padding-bottom: 30px;
 }
 
 h3 {
@@ -43,19 +39,12 @@ p {
   font-size: 12px;
 }
 
-#blue {
+.blue {
   color: blue;
   font-size: 20px;
 }
-
-body {
-  background-image: url("a-background-image.jpg");
-  background-size: contain;
-  background-repeat: repeat-y;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  padding-top: 50px;
+.black {
+  color: black;
 }
 
 table {
@@ -63,43 +52,65 @@ table {
   margin: auto;
 }
 
-#blog {
-  background-color: MEDIUMTURQUOISE;
-  padding: 50px;
-  font-family: courier;
-}
-
-#blogheader {
-  color: rgb(0, 74, 72);
-  padding-bottom: 30px;
-}
-
-#blogentry {
-  color: rgb(0, 74, 72);
-
-}
-
 button{
   border: none;
   text-align: center;
+  text-decoration: none;
 }
 
-a { /* how should i organize this button situation */
+a {
   text-decoration: none;
   font-family: courier;
-  color: rgb(0, 84, 82);
   font-weight: 600;
 }
 
-#source {
+div.bubble {
+  width: 50%;
+  margin: 50px auto;
+  padding: 50px;
+  text-align: center;
+  font-family: courier;
+}
+
+input {
+  border: none;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  font-family: courier;
+}
+
+#intro {
+  background-color: white;
+  width: 25%;
+}
+
+#blog {
+  background-color: MEDIUMTURQUOISE;
+}
+
+.blogheader {
+  color: rgb(0, 36, 35);
+}
+
+.blogentry {
+  color: rgb(0, 74, 72);
+}
+
+.textsource {
+  color: rgb(0, 84, 82);
+}
+
+.source {
+  cursor: pointer;
   background-color: rgba(0, 84, 82, 0.15);
   font-size: 12px;
-  font-weight: 600; /* doesn't work?? */
+  font-weight: 600;
   padding: 10px 30px;
   transition-duration: 0.4s;
 }
 
-#source:hover {
+.source:hover {
   background-color: rgba(0, 84, 82, 0.25);
 }
 
@@ -107,36 +118,38 @@ a { /* how should i organize this button situation */
 #classwork {
   background-color: LIGHTCYAN;
   padding: 50px;
-  font-family: courier;
-  margin-top: 50px;
 }
 
-#classworkheader {
+.classworkheader {
+  color: rgb(19, 66, 66);
+}
+
+.classworkentry {
   color: rgb(84, 150, 150);
-  padding-bottom: 30px;
+  padding: 25px;
 }
 
-#classworkentry {
-  color: rgb(84, 150, 150);
-  padding-bottom: 50px;
+.funtext {
+  background: linear-gradient(45deg, #f3ec78, #af4261);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-#rainbowbutton {
+.rainbowbutton {
   background: rgb(131,58,180);
   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   font-size: 12px;
-  font-weight: 300; /* doesn't work?? */
   padding: 10px 30px;
-  transition-duration: 0.4s;
 }
 
-div.animation {
-  background-image: url("a-sad.png");
+div#animation {
   background-size: 50px 50px;
   width: 50px;
   height: 50px;
   position: relative;
   margin: auto;
+  padding: 0px;
 
   /* initiate animation */
   animation-name: theSquare;
@@ -147,32 +160,42 @@ div.animation {
 }
 /* animation instructions  from to or % */
 @keyframes theSquare {
-  0% {left:-100px; background-color:rgba(251,81,63)}
+  0% {left:-100px; background-color:rgba(251,81,63);}
   25% {left:0px; background-color:rgb(176,199,94);}
   50% {left:100px; background-color:rgb(10,255,21);}
   75% {left:0px; background-color:rgb(119,136,209);}
   100% {left:-100px; background-color:rgb(164,70,252);}
 }
 
-div {
-  margin-top: 25px;
-  margin-bottom: 25px;
+div#agedifference {
+  font-size: 15px;
+  font-family: courier;
+  font-weight: 600;
+  margin: 20px;
+}
+
+input[value=result] {
+  width: 25px;
+  background-color: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin: auto;
 }
 
 #myart {
   background-color: DARKSEAGREEN;
-  padding: 50px;
-  font-family: courier;
+  color: rgb(1, 66, 1);
 }
 
 #findme {
   background-color: GOLDENROD;
-  padding: 50px;
-  font-family: courier;
+  color: rgb(140, 103, 11);
 }
 
 #commissions {
   background-color: PLUM;
-  padding: 50px;
-  font-family: courier;
+  color: rgb(99, 59, 99);
 }
