@@ -9,34 +9,38 @@ header {
   font-family: courier;
   font-style: italic;
   padding: 5px 30px;
-  width: 250px;
+  width: 300px;
 }
 
 body {
   background-image: url("images/background-image.jpg");
-  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   background-repeat: repeat-y;
+  height: 100%;
+  width: 100%;
   margin: 0px;
-  bottom: 50px;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 40px;
   font-style: italic;
-  padding-bottom: 30px;
+  font-weight: bolder;
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 p {
-  font-size: 12px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .blue {
@@ -50,6 +54,7 @@ p {
 table {
   width: auto;
   margin: auto;
+  padding: 100px;
 }
 
 button{
@@ -64,12 +69,66 @@ a {
   font-weight: 600;
 }
 
-div.bubble {
+.intro {
   width: 50%;
   margin: 50px auto;
   padding: 50px;
   text-align: center;
   font-family: courier;
+}
+
+.bubbles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+.bubble-closed {
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+.bubble-closed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: courier;
+  font-size: 30px;
+  padding-bottom: 0px;
+}
+
+.bubble-opened {
+  display: none;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  font-family: courier;
+  overflow: scroll;
+}
+
+.bubble-closed:hover + .bubble-opened {
+  display: block;
+  position: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubble-opened:hover {
+  display: block;
+  position: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input {
@@ -80,21 +139,32 @@ input {
   font-family: courier;
 }
 
+
+
+
+
 #intro {
   background-color: white;
-  width: 25%;
+  width: 30%;
+}
+
+#blog-closed {
+  background-color: rgb(224, 255, 255);
+  color: rgb(0, 117, 113)
 }
 
 #blog {
-  background-color: MEDIUMTURQUOISE;
+  background-color: rgba(224, 255, 255, 0.95);
 }
 
 .blogheader {
-  color: rgb(0, 36, 35);
+  color: rgb(0, 97, 94);
 }
 
 .blogentry {
-  color: rgb(0, 74, 72);
+  color: rgb(0, 97, 94);
+  padding-top: 20px;
+  padding-bottom: 0px;
 }
 
 .textsource {
@@ -104,7 +174,7 @@ input {
 .source {
   cursor: pointer;
   background-color: rgba(0, 84, 82, 0.15);
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 600;
   padding: 10px 30px;
   transition-duration: 0.4s;
@@ -114,19 +184,23 @@ input {
   background-color: rgba(0, 84, 82, 0.25);
 }
 
+#classwork-closed {
+  background-color: rgb(72, 209, 204);
+  color: rgb(31, 94, 94)
+}
 
 #classwork {
-  background-color: LIGHTCYAN;
-  padding: 50px;
+  background-color: rgba(72, 209, 204, 0.95);
 }
 
 .classworkheader {
-  color: rgb(19, 66, 66);
+  color: rgb(31, 94, 94);
 }
 
 .classworkentry {
-  color: rgb(84, 150, 150);
-  padding: 25px;
+  color: rgb(31, 94, 94);
+  padding-top: 20px;
+  padding-bottom: 0px;
 }
 
 .funtext {
@@ -185,17 +259,32 @@ input[value=result] {
   margin: auto;
 }
 
-#myart {
-  background-color: DARKSEAGREEN;
+#myart-closed {
+  background-color: rgb(143, 188, 139);
   color: rgb(1, 66, 1);
 }
 
+#myart {
+  background-color: rgba(143, 188, 139, 0.95);
+  color: rgb(1, 66, 1);
+}
+
+#findme-closed {
+  background-color: rgb(218, 165, 32);
+  color: rgb(120, 85, 0);
+}
+
 #findme {
-  background-color: GOLDENROD;
-  color: rgb(140, 103, 11);
+  background-color: rgba(218, 165, 32, 0.95);
+  color: rgb(120, 85, 0);
+}
+
+#commissions-closed {
+  background-color: rgb(221, 160, 221);
+  color: rgb(99, 59, 99);
 }
 
 #commissions {
-  background-color: PLUM;
+  background-color: rgba(221, 160, 221, 0.95);
   color: rgb(99, 59, 99);
 }
