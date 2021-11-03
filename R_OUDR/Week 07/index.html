@@ -2,8 +2,11 @@
 <html>
   <title>This is she, Rachel</title>
 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <script type="text/javascript" src="myscript.js"></script>
 
   <header>
@@ -127,6 +130,24 @@
 
           <tr>
             <td class="blogentry">
+              <h3>WEEK 07</h3>
+              <button class="source">
+                <a class="textsource" href="https://moodle.concordia.ca/moodle/pluginfile.php/5156503/mod_resource/content/1/docs_14EF76BB.pdf"  target="_blank"> Lawrence Lessig’s “Free Culture” </a>
+              </button>
+              <p>
+                Reading Lessig’s “Free Culture” really just reminds me how much of a capitalist society we all live in. This question of ownership is very much linked to the way our society is built, or at least how it evolved and that is in the direction of late-stage capitalism. Growing up in this society, it’s hard to image one without ownership. Ownership is in almost all aspects of our lives, even relationships. However, this idea of normalizing the giving of credit but allowing the right to build upon seems very much like my socialist society dream.
+              </p><br>
+              <button class="source">
+                <a class="textsource" href="http://www.gnu.org/gnu/manifesto.html"  target="_blank"> Richard Stallman’s “The GNU Manifesto” </a>
+              </button>
+              <p>
+                Similar to the last text, this is again just a fight against late-stage capitalism. A fight against this idea of ownership because we all know this concept was just created to maximize profit for the 1%. There’s always been this false claim against socialist ideals that without the capitalist monetary push there would be no source of motivation. This is false and there are multiple sources to prove it. Especially with such an interactive field as programming. Positive reinforcement, contributing to society, personal interest, and a passion for the field is enough. Programming is a field that is already very much based in the sharing of resources and sharing of work through this idea of “programming is just a bunch “copy-pasting”” so I believe that it should remain that way and if not, be reinforced through all software.
+              </p><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="blogentry">
               <h3>Final Remarks</h3>
               <p>
                 I very much enjoyed reading about the history of programming and more of an alternative view of it all throughout history and I believe the readings did a great job at doing that. I especially enjoyed seeing how the art world evolved throughout history in relation to the evolution of technology throughout time. The recent articles about crypto art, post-internet art, and net-art were all new concepts for that I very much enjoyed finding out about. It’s not always easy for me to find motivation to do class readings but once I found out I was actually interested in the things in the texts it became much easier. I learnt a lot through these readings and it was refreshing.
@@ -196,18 +217,15 @@
                 Introduced to HTML animations, javascript buttons, forms, and mouseOver functions
               </p><br>
               <div id="animation"></div><br>
-              <div id="invertButton">
-                <button class="source" onclick="invert()">
-                  see what i do
-                </button>
-              </div><br>
               <div id="agedifference">
                 <i>Find out our age difference!</i><br><br>
                 Enter your first name<br>
                 <input type="text" id="name" value=""><br>
                 Enter your year of birth<br>
                 <input type="number" id="year" value=""><br>
-                <button class="source" onclick="ageDiff()">let's find out</button><br>
+                <hr>
+                <button class="source"  onclick="ageDiff()">let's find out</button><br>
+                <hr>
                 You have
                 <input type="text" id="ageDiff" value="result">
                 years of age difference with me!
@@ -232,6 +250,29 @@
                 <div class="column">
                   <img src="images/inlove.png" width="50px">
                 </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="classworkentry">
+              <h3>WEEK 07</h3>
+              <p> Learnt how to add internal and external links for fonts, creating games with javascript, and the parallax effect</p><br>
+              <div class="row" id="font-links">
+                <p style="font-family: 'yoster';"> I'm a text using an internal font folder link. </p>
+                <p style="font-family: 'Dancing Script', cursive; font-size: 25px;"> I'm a text using an external online font link. </p>
+              </div>
+              <div class="row">
+                <img id="random-art" src="images/game/art_1.png" alt="an art piece" width="250px" height="250px"><br>
+                <button class="source" onclick="randomize()">
+                  click scroll through art
+                </button>
+              </div>
+              <div class="row">
+                <img id="random-art" src="images/game/art_1.png" alt="an art piece" width="250px" height="250px"><br>
+                <button class="source" onclick="randomize()">
+                  click scroll through art
+                </button>
               </div>
             </td>
           </tr>

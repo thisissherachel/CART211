@@ -21,6 +21,13 @@ function ageDiff() {
   }
 }
 
+//game that randomized the image shown
+function randomize(){
+    var imageShown = Math.floor(Math.random()*19 +1);
+    var imageName = 'images/game/art_' + imageShown + '.png'
+    document.getElementById('random-art').src=imageName;
+}
+
 //button controlling a function in Week 04 class work
 // function invert(){
 //   document.getElementById("invertButton").style.filter = invert(1);

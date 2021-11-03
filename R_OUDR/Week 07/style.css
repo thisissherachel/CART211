@@ -21,20 +21,24 @@ body {
   height: 100%;
   width: 100%;
   margin: 0px;
+  overflow: hidden;
 }
 
 h1 {
+  font-family: courier;
   font-size: 35px;
   font-weight: 600;
 }
 
 h2 {
+  font-family: courier;
   font-size: 40px;
   font-style: italic;
   font-weight: bolder;
 }
 
 h2.bubble-opened {
+  font-family: courier;
   display: inline-block;
   position: relative;
   padding-top: 125px;
@@ -45,12 +49,17 @@ h2.bubble-opened {
 }
 
 h3 {
+  font-family: courier;
   font-size: 18px;
 }
 
 p {
   font-size: 18px;
   font-weight: 500;
+}
+
+hr {
+  border: none;
 }
 
 .blue {
@@ -69,6 +78,7 @@ table {
 
 button{
   border: none;
+  font-family: courier;
   text-align: center;
   text-decoration: none;
 }
@@ -79,9 +89,14 @@ a {
   font-weight: 600;
 }
 
+@font-face {
+   font-family: yoster;
+   src: url("fonts/yoster.ttf");
+}
+
 .intro {
-  width: 50%;
-  margin: 50px auto;
+  width: 45%;
+  margin: 25px auto;
   padding: 50px;
   text-align: center;
   font-family: courier;
@@ -91,26 +106,22 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95%;
-  margin: auto;
+  width: 100%;
+  margin-bottom: 20px;
   text-align: center;
-}
-
-.bubble-closed {
-  display: inline-block;
-  text-align: center;
-  width: 300px;
-  height: 300px;
-  margin: 10px;
+  overflow: hidden;
 }
 
 .bubble-closed {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  text-align: center;
   font-family: courier;
   font-size: 30px;
+  width: 300px;
+  height: 300px;
+  margin: auto;
   padding-bottom: 0px;
 }
 
@@ -252,7 +263,7 @@ div#animation {
   100% {left:-100px; background-color:rgb(164,70,252);}
 }
 
-div#agedifference {
+#agedifference {
   font-size: 15px;
   font-family: courier;
   font-weight: 600;
