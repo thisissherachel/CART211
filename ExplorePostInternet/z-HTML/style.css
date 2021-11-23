@@ -1,0 +1,227 @@
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  padding: 5px 30px;
+  width: 300px;
+}
+
+body {
+  background-color: lightblue;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+hr {
+  border: none;
+}
+
+table {
+  width: auto;
+  margin: auto;
+  padding: 100px;
+}
+
+.intro {
+
+}
+
+.quotes {
+
+}
+
+.quote-closed {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  width: 250px;
+  height:150px;
+  margin: 50px;
+  overflow-wrap: break-word;
+
+  background-color: rgb(224, 255, 255);
+  color: rgb(0, 117, 113)
+}
+
+.quote-opened {
+  display: none;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  overflow: visible;
+
+  background-color: rgb(224, 255, 255);
+  color: rgb(0, 117, 113)
+}
+
+.quote-closed:hover + .quote-opened {
+  display: block;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-opened:hover {
+  display: block;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-header {
+  color: rgb(0, 97, 94);
+}
+
+.text-body {
+  color: rgb(0, 97, 94);
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+#quote01-closed {
+  top: 10%;
+  left: 10%;
+}
+
+#quote01-opened {
+
+}
+
+#quote02-closed {
+  top: 20%;
+  left: 70%;
+}
+
+#quote02-opened {
+
+}
+
+#quote03-closed {
+  top: 30%;
+  left: 30%;
+}
+
+#quote03-opened {
+
+}
+
+#quote04-closed {
+  top: 80%;
+  left: 80%;
+}
+
+#quote04-opened {
+
+}
+
+#quote05-closed {
+  top: 70%;
+  left: 40%;
+}
+
+#quote05-opened {
+
+}
+
+#quote06-closed {
+  top: 60%;
+  left: 10%;
+}
+
+#quote06-opened {
+
+}
+
+
+/* smaller screens */
+@media screen and (max-width: 1500px) {
+  .quote-closed {
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* tablets */
+@media screen and (max-width: 1250px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .quote-closed {
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* phones */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .quote-closed {
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+  }
+}
