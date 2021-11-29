@@ -1,4 +1,3 @@
-
 header {
   position: sticky;
   top: 0;
@@ -10,11 +9,27 @@ header {
   width: 300px;
 }
 
-body {
+/* Rachel's original css for the body*/
+/*body {
   background-color: lightblue;
   height: 100%;
   width: 100%;
   overflow: scroll;
+}*/
+
+/* Mathilde's css after adding the Background */
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
+
+/* css for the background div */
+#myBackground {
+  position: fixed;
+  z-index: -100;
 }
 
 h1 {
@@ -48,11 +63,9 @@ table {
 }
 
 .intro {
-
 }
 
 .quotes {
-
 }
 
 .quote-closed {
@@ -63,12 +76,12 @@ table {
   text-align: center;
   font-size: 30px;
   width: 250px;
-  height:150px;
+  height: 150px;
   margin: 50px;
   overflow-wrap: break-word;
 
   background-color: rgb(224, 255, 255);
-  color: rgb(0, 117, 113)
+  color: rgb(0, 117, 113);
 }
 
 .quote-opened {
@@ -85,7 +98,7 @@ table {
   overflow: visible;
 
   background-color: rgb(224, 255, 255);
-  color: rgb(0, 117, 113)
+  color: rgb(0, 117, 113);
 }
 
 .quote-closed:hover + .quote-opened {
@@ -118,7 +131,6 @@ table {
 }
 
 #quote01-opened {
-
 }
 
 #quote02-closed {
@@ -127,7 +139,6 @@ table {
 }
 
 #quote02-opened {
-
 }
 
 #quote03-closed {
@@ -136,16 +147,14 @@ table {
 }
 
 #quote03-opened {
-
 }
 
 #quote04-closed {
-  top: 80%;
+  top: 75%;
   left: 80%;
 }
 
 #quote04-opened {
-
 }
 
 #quote05-closed {
@@ -154,7 +163,6 @@ table {
 }
 
 #quote05-opened {
-
 }
 
 #quote06-closed {
@@ -163,9 +171,7 @@ table {
 }
 
 #quote06-opened {
-
 }
-
 
 /* smaller screens */
 @media screen and (max-width: 1500px) {
