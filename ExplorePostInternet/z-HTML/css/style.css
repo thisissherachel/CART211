@@ -99,6 +99,8 @@ table {
 
   background-color: rgb(224, 255, 255);
   color: rgb(0, 117, 113);
+
+  z-index: 100;
 }
 
 .quote-closed:hover + .quote-opened {
