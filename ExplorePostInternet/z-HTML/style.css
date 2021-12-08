@@ -58,6 +58,7 @@ table {
 .quote-closed {
   display: flex;
   position: absolute;
+  z-index: 0;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -74,6 +75,7 @@ table {
 .quote-opened {
   display: none;
   position: absolute;
+  z-index: 1;
   width: 90%;
   height: 90%;
   top: 0;
@@ -123,7 +125,7 @@ table {
 
 #quote02-closed {
   top: 20%;
-  left: 70%;
+  left: 65%;
 }
 
 #quote02-opened {
@@ -140,7 +142,7 @@ table {
 }
 
 #quote04-closed {
-  top: 80%;
+  top: 55%;
   left: 80%;
 }
 
@@ -149,8 +151,8 @@ table {
 }
 
 #quote05-closed {
-  top: 70%;
-  left: 40%;
+  top: 75%;
+  left: 50%;
 }
 
 #quote05-opened {
@@ -159,7 +161,7 @@ table {
 
 #quote06-closed {
   top: 60%;
-  left: 10%;
+  left: 5%;
 }
 
 #quote06-opened {
