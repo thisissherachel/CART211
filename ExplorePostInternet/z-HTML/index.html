@@ -15,12 +15,14 @@
 
     <!-- CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/dom5sef.css">
 
     <!-- Library scripts -->
     <script src="js/libraries/p5.min.js"></script>
     <script src="js/libraries/p5.sound.min.js"></script>
 
-    <!-- My script -->
+    <!-- java script -->
     <script src="js/myscript.js"></script>
   </head>
 
@@ -33,16 +35,19 @@
 
     <!-- header from intro page floating on main -->
     <div class="header" id="header">
-      <h1>Explore Post-Internet Art!</h1>
+      <img class="header" src="assets/images/header.png">
     </div>
 
     <!-- main layout with expandable elements on hover and on click -->
     <div class="quotes">
+
       <!-- QUOTE 01 -->
       <div class="quote-closed" id="quote01-closed">
+        <img class="quotes" src="assets/images/asset1.png">
         <h2>"Everything is anything else"</h2>
       </div>
       <div class="quote-opened" id="quote01-opened">
+        <img class="quotes" src="assets/images/asset1_3000px.png">
         <table>
           <tr>
             <td class="text-header">
@@ -75,12 +80,43 @@
 
       <!-- QUOTE 02 -->
       <div class="quote-closed" id="quote02-closed">
+        <img class="quotes" src="assets/images/asset2.png">
+        <h2>Quote 02</h2>
+      </div>
+      <div class="quote-opened" id="quote02-opened">
+        <img class="quotes" src="assets/images/asset2_3000px.png">
+        <table>
+          <tr>
+            <td class="text-header">
+              <h2>Quote 03</h2>
+              <p>
+                <i> [context] </i>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-body">
+              <h3>[subheader]</h3>
+              <p>
+                [text]
+              </p>
+              <br />
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- QUOTE 03 -->
+      <div class="quote-closed" id="quote03-closed">
+        <img class="quotes" src="assets/images/asset3.png">
         <h2>
           “The source object can no longer be regarded as inherently greater
           than any of its copies”
         </h2>
       </div>
-      <div class="quote-opened" id="quote02-opened">
+      <div class="quote-opened" id="quote03-opened">
+        <img class="quotes" src="assets/images/asset3_3000px.png">
         <table>
           <tr>
             <td class="text-header">
@@ -137,15 +173,17 @@
         </table>
       </div>
 
-      <!-- QUOTE 03 -->
-      <div class="quote-closed" id="quote03-closed">
-        <h2>Quote 03</h2>
+      <!-- QUOTE 04 -->
+      <div class="quote-closed" id="quote04-closed">
+        <img class="quotes" src="assets/images/asset4.png">
+        <h2>Quote 04</h2>
       </div>
-      <div class="quote-opened" id="quote03-opened">
+      <div class="quote-opened" id="quote04-opened">
+        <img class="quotes" src="assets/images/asset4_3000px.png">
         <table>
           <tr>
             <td class="text-header">
-              <h2>Quote 03</h2>
+              <h2>Quote 06</h2>
               <p>
                 <i> [context] </i>
               </p>
@@ -164,66 +202,15 @@
         </table>
       </div>
 
-      <!-- QUOTE 04 -->
-      <div class="quote-closed" id="quote04-closed">
-        <h2>
-          "Ironically, the most radical and ‘progressive’ movements of the
-          post-Internet period would be those who either pass by largely
-          unnoticed due to a decision to opt out of any easily-accessible
-          distribution networks, or else would be composed of a community of
-          people producing cultural objects not intended as artistic
-          propositions and not applying themselves with the label of artist."
-        </h2>
-      </div>
-      <div class="quote-opened" id="quote04-opened">
-        <table>
-          <tr>
-            <td class="text-header">
-              <h2>
-                "Ironically, the most radical and ‘progressive’ movements of the
-                post-Internet period would be those who either pass by largely
-                unnoticed due to a decision to opt out of any easily-accessible
-                distribution networks, or else would be composed of a community
-                of people producing cultural objects not intended as artistic
-                propositions and not applying themselves with the label of
-                artist."
-              </h2>
-              <p>
-                <i>
-                  What the text explains is that the Internet, “the screen,” the
-                  digital world has become an integral part of our lives. It is
-                  no longer a place that separates people, but, on the contrary,
-                  a “communal space” as said in the text. Through the Internet,
-                  it becomes easy to spread one’s art, and therefore, the text
-                  argues that “the most radical and ‘progressive’ movements of
-                  the Post-Internet period” are people who don’t identify as
-                  artists while creating “cultural objects,” or people who are
-                  not using “easily-accessible distribution networks” and are
-                  therefore “largely unnoticed.”
-                </i>
-              </p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="text-body">
-              <h3>[subheader]</h3>
-              <p>
-                [text]
-              </p>
-              <br />
-            </td>
-          </tr>
-        </table>
-      </div>
-
       <!-- QUOTE 05 -->
       <div class="quote-closed" id="quote05-closed">
+        <img class="quotes" src="assets/images/asset5.png">
         <h2>
           "Extraordinary is now also the ordinary—the myth is also the everyday"
         </h2>
       </div>
       <div class="quote-opened" id="quote05-opened">
+        <img class="quotes" src="assets/images/asset5_3000px.png">
         <table>
           <tr>
             <td class="text-header">
@@ -258,15 +245,43 @@
 
       <!-- QUOTE 06 -->
       <div class="quote-closed" id="quote06-closed">
-        <h2>Quote 06</h2>
+        <img class="quotes" src="assets/images/asset6.png">
+        <h2>
+          "Ironically, the most radical and ‘progressive’ movements of the
+          post-Internet period would be those who either pass by largely
+          unnoticed due to a decision to opt out of any easily-accessible
+          distribution networks, or else would be composed of a community of
+          people producing cultural objects not intended as artistic
+          propositions and not applying themselves with the label of artist."
+        </h2>
       </div>
       <div class="quote-opened" id="quote06-opened">
+        <img class="quotes" src="assets/images/asset6_3000px.png">
         <table>
           <tr>
             <td class="text-header">
-              <h2>Quote 06</h2>
+              <h2>
+                "Ironically, the most radical and ‘progressive’ movements of the
+                post-Internet period would be those who either pass by largely
+                unnoticed due to a decision to opt out of any easily-accessible
+                distribution networks, or else would be composed of a community
+                of people producing cultural objects not intended as artistic
+                propositions and not applying themselves with the label of
+                artist."
+              </h2>
               <p>
-                <i> [context] </i>
+                <i>
+                  What the text explains is that the Internet, “the screen,” the
+                  digital world has become an integral part of our lives. It is
+                  no longer a place that separates people, but, on the contrary,
+                  a “communal space” as said in the text. Through the Internet,
+                  it becomes easy to spread one’s art, and therefore, the text
+                  argues that “the most radical and ‘progressive’ movements of
+                  the Post-Internet period” are people who don’t identify as
+                  artists while creating “cultural objects,” or people who are
+                  not using “easily-accessible distribution networks” and are
+                  therefore “largely unnoticed.”
+                </i>
               </p>
             </td>
           </tr>

@@ -5,7 +5,7 @@ This is the background of the webpage
 "use strict";
 
 let sketch = function (p) {
-  let numSquares = 5;
+  let numSquares = 20;
   let squares = [];
 
   /**
@@ -24,8 +24,8 @@ let sketch = function (p) {
   };
 
   p.createSquares = function () {
-    let mySize = p.random((p.height / 5) * 3, (p.width / 5) * 3);
-    let alphaValue = 50;
+    let mySize = p.random((p.height / 5) * 4, (p.width / 5) * 4);
+    let alphaValue = 75;
     let fillOptions = [
       p.color(255, 99, 214, alphaValue),
       p.color(0, 12, 255, alphaValue),

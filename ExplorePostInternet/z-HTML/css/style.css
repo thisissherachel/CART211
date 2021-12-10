@@ -9,14 +9,6 @@ header {
   width: 300px;
 }
 
-/* Rachel's original css for the body*/
-/*body {
-  background-color: lightblue;
-  height: 100%;
-  width: 100%;
-  overflow: scroll;
-}*/
-
 /* Mathilde's css after adding the Background */
 body {
   padding: 0;
@@ -24,6 +16,10 @@ body {
   display: grid;
   height: 100%;
   width: 100%;
+
+  font-family: tenby-five,sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* css for the background div */
@@ -38,7 +34,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 20px;
   font-style: italic;
   font-weight: 600;
 }
@@ -57,62 +53,70 @@ hr {
 }
 
 table {
+  position: absolute;
   width: auto;
   margin: auto;
-  padding: 100px;
+  padding: 100px 200px;
 }
 
 .intro {
 }
 
-.quotes {
+.header {
+  position: fixed;
+  z-index: 100;
+  padding-top: 30px;
+  width: 95%;
+  filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
 }
 
 .quote-closed {
   display: flex;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 30px;
-  width: 250px;
-  height: 150px;
-  margin: 50px;
-  overflow-wrap: break-word;
-
-  background-color: rgb(224, 255, 255);
-  color: rgb(0, 117, 113);
+  overflow: hidden;
+  transition: all .5s ease;
 }
 
 .quote-opened {
   display: none;
   position: absolute;
-  z-index: 1;
-  width: 90%;
-  height: 90%;
+  z-index: 2;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
+  z-index: 100;
   margin: auto;
+  width: 80%;
   text-align: center;
   overflow: visible;
-
-  background-color: rgb(224, 255, 255);
-  color: rgb(0, 117, 113);
-
-  z-index: 100;
 }
 
-.quote-closed:hover + .quote-opened {
+img.quotes {
+  display: block;
+  position: fixed;
+  z-index: -10;
+  width:inherit;
+  margin: auto;
+  filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
+}
+
+div.quote-closed:hover{
+  display: none;
+}
+
+div.quote-closed:hover + div.quote-opened {
   display: block;
   position: absolute;
   justify-content: center;
   align-items: center;
 }
 
-.quote-opened:hover {
+div.quote-opened:hover {
   display: block;
   position: absolute;
   justify-content: center;
@@ -120,42 +124,53 @@ table {
 }
 
 .text-header {
-  color: rgb(0, 97, 94);
+  color: black;
 }
 
 .text-body {
-  color: rgb(0, 97, 94);
+  color: black;
   padding-top: 20px;
   padding-bottom: 0px;
 }
 
 #quote01-closed {
-  top: 10%;
+  top: 35%;
   left: 10%;
+}
+img.quotes#quote01-closed {
+  width: 15%;
 }
 
 #quote01-opened {
 }
+img.quotes#quote01-opened {
+  display: block;
+  position: absolute;
+  width: 80%;
+}
 
 #quote02-closed {
-  top: 20%;
-  left: 65%;
+  top: 45%;
+  left: 30%;
+  width: 30%;
 }
 
 #quote02-opened {
 }
 
 #quote03-closed {
-  top: 30%;
-  left: 30%;
+  top: 15%;
+  left: 65%;
+  width: 25%;
 }
 
 #quote03-opened {
 }
 
 #quote04-closed {
-  top: 55%;
-  left: 80%;
+  top: 65%;
+  left: 0%;
+  width: 25%;
 }
 
 #quote04-opened {
@@ -163,18 +178,21 @@ table {
 
 #quote05-closed {
   top: 75%;
-  left: 50%;
+  left: 25%;
+  width: 30%;
 }
 
 #quote05-opened {
 }
 
 #quote06-closed {
-  top: 60%;
-  left: 5%;
+  top: 55%;
+  left: 55%;
+  width: 40%;
 }
 
 #quote06-opened {
+
 }
 
 /* smaller screens */
