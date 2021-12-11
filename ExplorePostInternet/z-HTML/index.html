@@ -24,6 +24,7 @@
 
     <!-- java script -->
     <script src="js/myBackground.js"></script>
+    <script src="js/script.js"></script>
   </head>
 
   <body>
@@ -42,11 +43,19 @@
     <div class="quotes">
       <!-- QUOTE 01 cyan-->
       <div class="quote-closed" id="quote01-closed">
-        <img class="quotes" src="assets/images/asset1@3000x.png" />
+        <img
+          class="quotes"
+          src="assets/images/asset1@3000x.png"
+          onclick="openQuote1()"
+        />
         <h2 class="quotes" id="quote01-txt">"Everything is anything else"</h2>
       </div>
       <div class="quote-opened" id="quote01-opened">
-        <img class="quotes" src="assets/images/asset1@3000x.png" />
+        <img
+          class="quotes"
+          src="assets/images/asset1@3000x.png"
+          onclick="closeQuote1()"
+        />
         <div id="text01">
           <div id="quote01-txt-1">
             <h2 class="text-header"><i>"Everything is anything else"</i></h2>
