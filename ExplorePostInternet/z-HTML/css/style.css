@@ -83,12 +83,11 @@ table {
   display: flex;
   position: absolute;
   z-index: 1;
-  /* justify-content: center; */
   align-items: center;
   text-align: center;
   font-size: 30px;
   overflow: hidden;
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
 }
 
 .quote-opened {
@@ -111,27 +110,31 @@ img.quotes {
   width: inherit;
   margin: auto;
   filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
+  transition: 0.5s all ease;
+  transform: scale(1);
+  animation: entry 1s linear 1;
 }
 
-img.quote-closed:hover {
-  display: none;
+img.quotes:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.5s all ease;
+  /* z-index: 400; */
 }
 
-div.quote-closed:hover + div.quote-opened {
+/* div.quote-closed:hover + div.quote-opened {
   display: block;
   position: absolute;
-  /* justify-content: center; */
   text-align: justify;
   align-items: center;
-}
+} */
 
-div.quote-opened:hover {
+/* div.quote-opened:hover {
   display: block;
   position: absolute;
-  /* justify-content: center; */
   text-align: justify;
   align-items: center;
-}
+} */
 
 .text-header {
   color: black;
