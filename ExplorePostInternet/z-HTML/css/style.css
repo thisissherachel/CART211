@@ -136,9 +136,10 @@ div.quote-opened:hover {
 div#quote01-closed {
   top: 35%;
   left: 10%;
+  width: 20%;
 
-  animation: pop-up 2s ease-in-out;
-  animation-delay: 1s;
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 1s; */
 }
 
 div#quote01-opened {
@@ -146,23 +147,23 @@ div#quote01-opened {
 
 div#quote02-closed {
   top: 45%;
-  left: 30%;
+  left: 35%;
   width: 30%;
 
-  animation: pop-up 2s ease-in-out;
-  animation-delay: 2.5s;
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 2.5s; */
 }
 
 div#quote02-opened {
 }
 
 div#quote03-closed {
-  top: 15%;
-  left: 65%;
+  top: 20%;
+  left: 70%;
   width: 25%;
 
-  animation: pop-up 2s ease-in-out;
-  animation-delay: 5s;
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 5s; */
 }
 
 div#quote03-opened {
@@ -170,11 +171,11 @@ div#quote03-opened {
 
 div#quote04-closed {
   top: 65%;
-  left: 0%;
+  left: 5%;
   width: 25%;
 
-  animation: pop-up 2s ease-in-out;
-  animation-delay: 4s;
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 4s; */
 }
 
 div#quote04-opened {
@@ -182,23 +183,23 @@ div#quote04-opened {
 
 div#quote05-closed {
   top: 75%;
-  left: 25%;
+  left: 30%;
   width: 30%;
 
-  animation: pop-up 2s ease-in-out;
-  animation-delay: 6s;
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 6s; */
 }
 
 div#quote05-opened {
 }
 
 div#quote06-closed {
-  top: 55%;
-  left: 55%;
-  width: 40%;
+  top: 65%;
+  left: 60%;
+  width: 35%;
 
-  animation: pop-up 2s ease-in-out;
-  animation-delay: 2s;
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 2s; */
 }
 
 div#quote06-opened {
