@@ -1,0 +1,517 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  padding: 5px 30px;
+  width: 300px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  font-family: tenby-five, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* css for the background div */
+#myBackground {
+  position: fixed;
+  z-index: -100;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+hr {
+  border: none;
+}
+
+table {
+  position: absolute;
+  width: auto;
+  margin: auto;
+  padding: 100px 200px;
+}
+
+.intro {
+}
+
+.header {
+  position: fixed;
+  z-index: 0;
+  padding-top: 30px;
+  width: 95%;
+  filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
+}
+
+/* css links for source of image/links if needed */
+.img-link {
+  color: #000000;
+  text-decoration: none;
+}
+.img-link:hover {
+  font-weight: bold;
+}
+
+.quote-closed {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.quote-opened {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  overflow: visible;
+}
+
+img.quotes {
+  display: block;
+  position: fixed;
+  z-index: -10;
+  width: inherit;
+  margin: auto;
+  filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
+}
+
+img.quote-closed:hover {
+  display: none;
+}
+
+div.quote-closed:hover + div.quote-opened {
+  display: block;
+  position: absolute;
+  /* justify-content: center; */
+  text-align: justify;
+  align-items: center;
+}
+
+div.quote-opened:hover {
+  display: block;
+  position: absolute;
+  /* justify-content: center; */
+  text-align: justify;
+  align-items: center;
+}
+
+.text-header {
+  color: black;
+}
+
+.text-body {
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+/* Start quote 1 */
+#quote01-closed {
+  /* top: 35%;
+  left: 10%;
+  width: 20%; */
+
+  top: 10%;
+  left: 2%;
+  width: 20%;
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 1s; */
+}
+
+#quote01-txt {
+  margin: 50px 50px 0px 50px;
+}
+
+#quote01-opened {
+  width: 60%;
+}
+
+#text01 {
+  margin-top: 21vh;
+  margin-bottom: 75vh;
+  height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  overflow: auto;
+  width: 50%;
+}
+
+#quote01-txt-1 {
+  margin-left: 40px;
+  /* margin-right: auto; */
+}
+
+#quote01-txt-2 {
+  margin-top: 60px;
+  margin-left: 40px;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+#quote01-txt-citation {
+  margin-top: 0px;
+  margin-left: 40px;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+#quote01-txt-3 {
+  margin-top: 60px;
+  margin-left: 40px;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+#quote01-txt-4 {
+  margin-top: 60px;
+  margin-left: 40px;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+#chairs-img {
+  width: 50%;
+  margin-left: 200px;
+  margin-right: auto;
+}
+/* End quote 1 */
+
+/* Start quote 2 */
+#quote02-closed {
+  /* top: 45%;
+  left: 35%;
+  width: 30%; */
+
+  top: 30%;
+  left: 25%;
+  width: 35%;
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 2.5s; */
+}
+
+#quote02-txt {
+  margin-left: 170px;
+  margin-right: auto;
+  width: 45%;
+}
+
+#quote02-opened {
+  width: 60%;
+}
+
+#text02 {
+  margin-top: 25vh;
+  margin-bottom: 75vh;
+  height: 50vh;
+  margin-left: 35%;
+  padding: 5px;
+  overflow: auto;
+  width: 42%;
+}
+
+#quote02-txt-1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote02-txt-2 {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote02-txt-3 {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote02-txt-4 {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* End quote 2 */
+
+/* Start quote 3 */
+#quote03-closed {
+  top: 15%;
+  left: 58%;
+  width: 27%;
+
+  /* top: 20%;
+  left: 70%;
+  width: 25%; */
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 5s; */
+}
+
+#quote03-txt {
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+
+#quote03-opened {
+  width: 60%;
+}
+
+#text03 {
+  margin-top: 20vh;
+  margin-bottom: 75vh;
+  height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  overflow: auto;
+  width: 40%;
+}
+
+#quote03-txt-1 {
+  /* width: 35%; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote03-txt-2 {
+  /* width: 35%; */
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote03-txt-3 {
+  /* width: 35%; */
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote03-txt-4 {
+  /* width: 35%; */
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* End quote 3 */
+
+/* Start quote 4 */
+#quote04-closed {
+  /* top: 65%;
+  left: 5%;
+  width: 25%; */
+
+  top: 65%;
+  left: 5%;
+  width: 25%;
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 4s; */
+}
+
+#quote04-txt {
+  margin: 0px 140px 0px 10px;
+}
+
+#quote04-opened {
+  width: 60%;
+}
+
+#text04 {
+  margin-top: 21vh;
+  margin-bottom: 75vh;
+  height: 60vh;
+  margin-left: 100px;
+  margin-right: auto;
+  padding: 5px;
+  overflow: auto;
+  width: 50%;
+}
+/* End quote 4 */
+
+/* Start quote 5 */
+#quote05-closed {
+  top: 75%;
+  left: 30%;
+  width: 30%;
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 6s; */
+}
+
+#quote05-txt {
+  margin: 60px 100px 0px 50px;
+}
+
+#quote05-opened {
+}
+
+#text05 {
+  margin-top: 21vh;
+  margin-bottom: 75vh;
+  height: 60vh;
+  margin-left: 70px;
+  margin-right: auto;
+  padding: 5px;
+  overflow: auto;
+  width: 35%;
+}
+
+#quote05-txt-1 {
+}
+
+#quote05-txt-2 {
+}
+/* End quote 5 */
+
+/* Start quote 6 */
+#quote06-closed {
+  /* top: 65%;
+  left: 60%;
+  width: 35%; */
+
+  top: 60%;
+  left: 63%;
+  width: 40%;
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 2s; */
+}
+
+#quote06-txt {
+  margin: 50px 100px 0px 70px;
+}
+
+#quote06-opened {
+  width: 60%;
+}
+
+#text06 {
+  margin-top: 21vh;
+  margin-bottom: 75vh;
+  height: 60vh;
+  margin-left: 300px;
+  margin-right: auto;
+  padding: 5px;
+  overflow: auto;
+  width: 55%;
+}
+
+#quote06-txt-1 {
+}
+
+#quote06-txt-2 {
+}
+/* End quote 6 */
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+
+/* smaller screens */
+@media screen and (max-width: 1500px) {
+  .quote-closed {
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* tablets */
+@media screen and (max-width: 1250px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .quote-closed {
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* phones */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .quote-closed {
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+  }
+}
