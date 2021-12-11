@@ -27,7 +27,7 @@ let sketch = function (p) {
   };
 
   p.createSquares = function () {
-    let mySize = p.random((p.height / 5) * 3, (p.width / 5) * 3);
+    let mySize = p.random((p.height / 5) * 4, (p.width / 5) * 4);
     let alphaValue = 75;
     let fillOptions = [
       p.color(255, 99, 214, alphaValue),

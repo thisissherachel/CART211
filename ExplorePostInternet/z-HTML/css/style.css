@@ -1,4 +1,14 @@
-/* Mathilde's css after adding the Background */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  padding: 5px 30px;
+  width: 300px;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -10,17 +20,6 @@ body {
   font-family: tenby-five, sans-serif;
   font-weight: 700;
   font-style: normal;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  color: white;
-  text-align: center;
-  font-style: italic;
-  padding: 5px 30px;
-  width: 300px;
 }
 
 /* css for the background div */
@@ -65,12 +64,13 @@ table {
 
 .header {
   position: fixed;
-  z-index: 100;
+  z-index: 0;
   padding-top: 30px;
   width: 95%;
   filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
 }
 
+/* css links for source of image/links if needed */
 .img-link {
   color: #000000;
   text-decoration: none;
@@ -85,11 +85,10 @@ table {
   z-index: 1;
   /* justify-content: center; */
   align-items: center;
-  text-align: justify;
+  text-align: center;
   font-size: 30px;
   overflow: hidden;
   transition: all 0.5s ease;
-  /* border: 2px solid #111111; */
 }
 
 .quote-opened {
@@ -99,7 +98,6 @@ table {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
   margin: auto;
   width: 80%;
   text-align: center;
@@ -147,62 +145,68 @@ div.quote-opened:hover {
 
 /* Start quote 1 */
 #quote01-closed {
+  /* top: 35%;
+  left: 10%;
+  width: 20%; */
+
   top: 10%;
-  left: 5%;
+  left: 2%;
+  width: 20%;
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 1s; */
 }
 
 #quote01-txt {
   margin: 50px 50px 0px 50px;
 }
 
-/* img.quotes#quote01-closed {
-  width: 15%;
-} */
-
 #quote01-opened {
   width: 60%;
 }
 
 #text01 {
-  margin-top: 20vh;
+  margin-top: 21vh;
   margin-bottom: 75vh;
   height: 60vh;
-  margin-left: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
   overflow: auto;
+  width: 50%;
 }
 
 #quote01-txt-1 {
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40px;
+  /* margin-right: auto; */
 }
 
 #quote01-txt-2 {
-  width: 40%;
   margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40px;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 #quote01-txt-citation {
-  width: 50%;
   margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40px;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 #quote01-txt-3 {
-  width: 40%;
   margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40px;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 #quote01-txt-4 {
-  width: 40%;
   margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40px;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 #chairs-img {
@@ -210,19 +214,20 @@ div.quote-opened:hover {
   margin-left: 200px;
   margin-right: auto;
 }
-
-/* img.quotes#quote01-opened {
-  display: block;
-  position: absolute;
-  width: 80%;
-} */
 /* End quote 1 */
 
 /* Start quote 2 */
 #quote02-closed {
+  /* top: 45%;
+  left: 35%;
+  width: 30%; */
+
   top: 30%;
   left: 25%;
   width: 35%;
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 2.5s; */
 }
 
 #quote02-txt {
@@ -238,33 +243,31 @@ div.quote-opened:hover {
 #text02 {
   margin-top: 25vh;
   margin-bottom: 75vh;
-  height: 60vh;
-  margin-left: 100px;
+  height: 50vh;
+  margin-left: 35%;
+  padding: 5px;
   overflow: auto;
+  width: 42%;
 }
 
 #quote02-txt-1 {
-  width: 40%;
   margin-left: auto;
   margin-right: auto;
 }
 
 #quote02-txt-2 {
-  width: 40%;
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #quote02-txt-3 {
-  width: 40%;
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #quote02-txt-4 {
-  width: 40%;
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
@@ -276,12 +279,19 @@ div.quote-opened:hover {
   top: 15%;
   left: 58%;
   width: 27%;
+
+  /* top: 20%;
+  left: 70%;
+  width: 25%; */
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 5s; */
 }
 
 #quote03-txt {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 45%;
 }
 
 #quote03-opened {
@@ -292,32 +302,35 @@ div.quote-opened:hover {
   margin-top: 20vh;
   margin-bottom: 75vh;
   height: 60vh;
-  margin-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
   overflow: auto;
+  width: 40%;
 }
 
 #quote03-txt-1 {
-  width: 35%;
+  /* width: 35%; */
   margin-left: auto;
   margin-right: auto;
 }
 
 #quote03-txt-2 {
-  width: 35%;
+  /* width: 35%; */
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #quote03-txt-3 {
-  width: 35%;
+  /* width: 35%; */
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #quote03-txt-4 {
-  width: 35%;
+  /* width: 35%; */
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
@@ -326,9 +339,16 @@ div.quote-opened:hover {
 
 /* Start quote 4 */
 #quote04-closed {
+  /* top: 65%;
+  left: 5%;
+  width: 25%; */
+
   top: 65%;
   left: 5%;
   width: 25%;
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 4s; */
 }
 
 #quote04-txt {
@@ -336,6 +356,18 @@ div.quote-opened:hover {
 }
 
 #quote04-opened {
+  width: 60%;
+}
+
+#text04 {
+  margin-top: 21vh;
+  margin-bottom: 75vh;
+  height: 60vh;
+  margin-left: 100px;
+  margin-right: auto;
+  padding: 5px;
+  overflow: auto;
+  width: 50%;
 }
 /* End quote 4 */
 
@@ -344,6 +376,9 @@ div.quote-opened:hover {
   top: 75%;
   left: 30%;
   width: 30%;
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 6s; */
 }
 
 #quote05-txt {
@@ -353,20 +388,36 @@ div.quote-opened:hover {
 #quote05-opened {
 }
 
+#text05 {
+  margin-top: 21vh;
+  margin-bottom: 75vh;
+  height: 60vh;
+  margin-left: 70px;
+  margin-right: auto;
+  padding: 5px;
+  overflow: auto;
+  width: 35%;
+}
+
 #quote05-txt-1 {
-  margin: 0px 650px 0px -50px;
 }
 
 #quote05-txt-2 {
-  margin: 10px 500px 0px -130px;
 }
 /* End quote 5 */
 
 /* Start quote 6 */
 #quote06-closed {
+  /* top: 65%;
+  left: 60%;
+  width: 35%; */
+
   top: 60%;
   left: 63%;
   width: 40%;
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 2s; */
 }
 
 #quote06-txt {
@@ -377,13 +428,34 @@ div.quote-opened:hover {
   width: 60%;
 }
 
-#quote06-txt-1 {
-  margin: 10px -60px 0px 140px;
+#text06 {
+  margin-top: 21vh;
+  margin-bottom: 75vh;
+  height: 60vh;
+  margin-left: 300px;
+  margin-right: auto;
+  padding: 5px;
+  overflow: auto;
+  width: 55%;
 }
+
+#quote06-txt-1 {
+}
+
 #quote06-txt-2 {
-  margin: 10px -130px 0px -70px;
 }
 /* End quote 6 */
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
 
 /* smaller screens */
 @media screen and (max-width: 1500px) {
