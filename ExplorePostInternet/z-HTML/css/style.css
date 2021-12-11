@@ -1,3 +1,17 @@
+/* Mathilde's css after adding the Background */
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  font-family: tenby-five, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -7,23 +21,6 @@ header {
   font-style: italic;
   padding: 5px 30px;
   width: 300px;
-}
-
-/* Rachel's original css for the body*/
-/*body {
-  background-color: lightblue;
-  height: 100%;
-  width: 100%;
-  overflow: scroll;
-}*/
-
-/* Mathilde's css after adding the Background */
-body {
-  padding: 0;
-  margin: 0;
-  display: grid;
-  height: 100%;
-  width: 100%;
 }
 
 /* css for the background div */
@@ -38,7 +35,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 20px;
   font-style: italic;
   font-weight: 600;
 }
@@ -57,123 +54,336 @@ hr {
 }
 
 table {
+  position: absolute;
   width: auto;
   margin: auto;
-  padding: 100px;
+  padding: 100px 200px;
 }
 
 .intro {
 }
 
-.quotes {
+.header {
+  position: fixed;
+  z-index: 100;
+  padding-top: 30px;
+  width: 95%;
+  filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
+}
+
+.img-link {
+  color: #000000;
+  text-decoration: none;
+}
+.img-link:hover {
+  font-weight: bold;
 }
 
 .quote-closed {
   display: flex;
   position: absolute;
-  justify-content: center;
+  z-index: 1;
+  /* justify-content: center; */
   align-items: center;
-  text-align: center;
+  text-align: justify;
   font-size: 30px;
-  width: 250px;
-  height: 150px;
-  margin: 50px;
-  overflow-wrap: break-word;
-
-  background-color: rgb(224, 255, 255);
-  color: rgb(0, 117, 113);
+  overflow: hidden;
+  transition: all 0.5s ease;
+  /* border: 2px solid #111111; */
 }
 
 .quote-opened {
   display: none;
   position: absolute;
-  width: 90%;
-  height: 90%;
+  z-index: 2;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
+  z-index: 100;
   margin: auto;
+  width: 80%;
   text-align: center;
   overflow: visible;
-
-  background-color: rgb(224, 255, 255);
-  color: rgb(0, 117, 113);
-
-  z-index: 100;
 }
 
-.quote-closed:hover + .quote-opened {
+img.quotes {
+  display: block;
+  position: fixed;
+  z-index: -10;
+  width: inherit;
+  margin: auto;
+  filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
+}
+
+img.quote-closed:hover {
+  display: none;
+}
+
+div.quote-closed:hover + div.quote-opened {
   display: block;
   position: absolute;
-  justify-content: center;
+  /* justify-content: center; */
+  text-align: justify;
   align-items: center;
 }
 
-.quote-opened:hover {
+div.quote-opened:hover {
   display: block;
   position: absolute;
-  justify-content: center;
+  /* justify-content: center; */
+  text-align: justify;
   align-items: center;
 }
 
 .text-header {
-  color: rgb(0, 97, 94);
+  color: black;
 }
 
 .text-body {
-  color: rgb(0, 97, 94);
+  color: black;
   padding-top: 20px;
   padding-bottom: 0px;
 }
 
+/* Start quote 1 */
 #quote01-closed {
   top: 10%;
-  left: 10%;
+  left: 5%;
 }
+
+#quote01-txt {
+  margin: 50px 50px 0px 50px;
+}
+
+/* img.quotes#quote01-closed {
+  width: 15%;
+} */
 
 #quote01-opened {
+  width: 60%;
 }
 
+#text01 {
+  margin-top: 20vh;
+  margin-bottom: 75vh;
+  height: 60vh;
+  margin-left: 100px;
+  overflow: auto;
+}
+
+#quote01-txt-1 {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote01-txt-2 {
+  width: 40%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote01-txt-citation {
+  width: 50%;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote01-txt-3 {
+  width: 40%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote01-txt-4 {
+  width: 40%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#chairs-img {
+  width: 50%;
+  margin-left: 200px;
+  margin-right: auto;
+}
+
+/* img.quotes#quote01-opened {
+  display: block;
+  position: absolute;
+  width: 80%;
+} */
+/* End quote 1 */
+
+/* Start quote 2 */
 #quote02-closed {
-  top: 20%;
-  left: 70%;
+  top: 30%;
+  left: 25%;
+  width: 35%;
+}
+
+#quote02-txt {
+  margin-left: 170px;
+  margin-right: auto;
+  width: 45%;
 }
 
 #quote02-opened {
+  width: 60%;
 }
 
+#text02 {
+  margin-top: 25vh;
+  margin-bottom: 75vh;
+  height: 60vh;
+  margin-left: 100px;
+  overflow: auto;
+}
+
+#quote02-txt-1 {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote02-txt-2 {
+  width: 40%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote02-txt-3 {
+  width: 40%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote02-txt-4 {
+  width: 40%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* End quote 2 */
+
+/* Start quote 3 */
 #quote03-closed {
-  top: 30%;
-  left: 30%;
+  top: 15%;
+  left: 58%;
+  width: 27%;
+}
+
+#quote03-txt {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 #quote03-opened {
+  width: 60%;
 }
 
+#text03 {
+  margin-top: 20vh;
+  margin-bottom: 75vh;
+  height: 60vh;
+  margin-left: 30px;
+  overflow: auto;
+}
+
+#quote03-txt-1 {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote03-txt-2 {
+  width: 35%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote03-txt-3 {
+  width: 35%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote03-txt-4 {
+  width: 35%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* End quote 3 */
+
+/* Start quote 4 */
 #quote04-closed {
-  top: 75%;
-  left: 80%;
+  top: 65%;
+  left: 5%;
+  width: 25%;
+}
+
+#quote04-txt {
+  margin: 0px 140px 0px 10px;
 }
 
 #quote04-opened {
 }
+/* End quote 4 */
 
+/* Start quote 5 */
 #quote05-closed {
-  top: 70%;
-  left: 40%;
+  top: 75%;
+  left: 30%;
+  width: 30%;
+}
+
+#quote05-txt {
+  margin: 60px 100px 0px 50px;
 }
 
 #quote05-opened {
 }
 
+#quote05-txt-1 {
+  margin: 0px 650px 0px -50px;
+}
+
+#quote05-txt-2 {
+  margin: 10px 500px 0px -130px;
+}
+/* End quote 5 */
+
+/* Start quote 6 */
 #quote06-closed {
   top: 60%;
-  left: 10%;
+  left: 63%;
+  width: 40%;
+}
+
+#quote06-txt {
+  margin: 50px 100px 0px 70px;
 }
 
 #quote06-opened {
+  width: 60%;
 }
+
+#quote06-txt-1 {
+  margin: 10px -60px 0px 140px;
+}
+#quote06-txt-2 {
+  margin: 10px -130px 0px -70px;
+}
+/* End quote 6 */
 
 /* smaller screens */
 @media screen and (max-width: 1500px) {

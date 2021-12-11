@@ -1,11 +1,14 @@
 /**
 This is the background of the webpage
+
+How to integrate a p5 script in an html div:
+https://joemckaystudio.com/multisketches/
 */
 
 "use strict";
 
 let sketch = function (p) {
-  let numSquares = 5;
+  let numSquares = 20;
   let squares = [];
 
   /**
@@ -25,7 +28,7 @@ let sketch = function (p) {
 
   p.createSquares = function () {
     let mySize = p.random((p.height / 5) * 3, (p.width / 5) * 3);
-    let alphaValue = 50;
+    let alphaValue = 75;
     let fillOptions = [
       p.color(255, 99, 214, alphaValue),
       p.color(0, 12, 255, alphaValue),
@@ -65,6 +68,7 @@ Description of draw()
       let square = squares[i];
       p.push();
 
+      // Rrotation and velocity of the squares
       let r = p.random(0, 1);
       if (r < square.turnRate) {
         square.vx = p.random(-square.speed, square.speed);
@@ -72,20 +76,26 @@ Description of draw()
         square.rotate = -square.rotate;
       }
 
+      // Add the velocity to the coordinates to make the square move
       square.x += square.vx;
       square.y += square.vy;
 
+      // Stop the square from going too far off canvas
       square.x = p.constrain(square.x, -10, p.width + 10);
       square.y = p.constrain(square.y, -10, p.height + 10);
 
+      // Fill and no stroke
       p.noStroke();
       p.fill(square.fill);
 
+      // Add the rotation to the angle so the square rotates
       square.angle += square.rotate;
 
+      // Place the square at the right coordinates and rotate it by the angle
       p.translate(square.x, square.y);
       p.rotate(square.angle);
 
+      // Display the square
       p.rect(0, 0, square.size);
       p.pop();
     }
@@ -97,8 +107,3 @@ Description of draw()
 };
 
 let myp5 = new p5(sketch, `myBackground`);
-
-/**
-How to integrate a p5 script in an html div:
-https://joemckaystudio.com/multisketches/
-*/
