@@ -101,6 +101,18 @@ table {
   width: 0%;
   text-align: center;
   overflow: visible;
+
+  display: block;
+  position: absolute;
+  text-align: justify;
+  align-items: center;
+}
+/* img.quote-opened {
+  width: 60%;
+} */
+
+h2.quotes {
+  font-size: 10px;
 }
 
 img.quotes {
@@ -111,17 +123,17 @@ img.quotes {
   margin: auto;
   filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
   transition: 0.5s all ease;
-  transform: scale(1);
+  transform: scale(0.65);
   animation: entry 1s linear 1;
 }
 
 img.quotes:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1);
   transition: 0.5s all ease;
 }
 
-div.quote-closed:hover + div.quote-opened {
+/* div.quote-closed:hover + div.quote-opened {
   display: block;
   position: absolute;
   text-align: justify;
@@ -133,7 +145,7 @@ div.quote-opened:hover {
   position: absolute;
   text-align: justify;
   align-items: center;
-}
+} */
 
 .text-header {
   color: black;
@@ -148,21 +160,23 @@ div.quote-opened:hover {
 /* Start quote 1 */
 #quote01-closed {
   top: 10%;
-  left: 2%;
-  width: 20%;
+  left: 4%;
+  width: 15%;
 
   /* animation: pop-up 2s ease-in-out;
   animation-delay: 1s; */
 }
-
+img#img-quote01 {
+  top: 0vh;
+  left: 1%;
+  width: 20%;
+}
 #quote01-txt {
   margin: 50px 50px 0px 50px;
 }
-
 #quote01-opened {
   width: 60%;
 }
-
 #text01 {
   margin-top: 21vh;
   margin-bottom: 75vh;
@@ -173,71 +187,30 @@ div.quote-opened:hover {
   overflow: auto;
   width: 50%;
 }
-
-#quote01-txt-1 {
-  margin-left: 40px;
-  /* margin-right: auto; */
-}
-
-#quote01-txt-2 {
-  margin-top: 60px;
-  margin-left: 40px;
-  /* margin-left: auto;
-  margin-right: auto; */
-}
-
-#quote01-txt-citation {
-  margin-top: 0px;
-  margin-left: 40px;
-  /* margin-left: auto;
-  margin-right: auto; */
-}
-
-#quote01-txt-3 {
-  margin-top: 60px;
-  margin-left: 40px;
-  /* margin-left: auto;
-  margin-right: auto; */
-}
-
-#quote01-txt-4 {
-  margin-top: 60px;
-  margin-left: 40px;
-  /* margin-left: auto;
-  margin-right: auto; */
-}
-
-#chairs-img {
-  width: 50%;
-  margin-left: 200px;
-  margin-right: auto;
-}
 /* End quote 1 */
 
 /* Start quote 2 */
 #quote02-closed {
-  /* top: 45%;
-  left: 35%;
-  width: 30%; */
-
-  top: 30%;
-  left: 25%;
-  width: 35%;
+  top: 41%;
+  left: 26%;
+  width: 18%;
 
   /* animation: pop-up 2s ease-in-out;
   animation-delay: 2.5s; */
 }
-
+img#img-quote02 {
+  top: 30vh;
+  left: 30%;
+  width: 20%;
+}
 #quote02-txt {
   margin-left: 170px;
   margin-right: auto;
   width: 45%;
 }
-
 #quote02-opened {
   width: 60%;
 }
-
 #text02 {
   margin-top: 25vh;
   margin-bottom: 75vh;
@@ -247,55 +220,30 @@ div.quote-opened:hover {
   overflow: auto;
   width: 42%;
 }
-
-#quote02-txt-1 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#quote02-txt-2 {
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#quote02-txt-3 {
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#quote02-txt-4 {
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-}
 /* End quote 2 */
 
 /* Start quote 3 */
 #quote03-closed {
-  top: 15%;
-  left: 58%;
-  width: 27%;
-
-  /* top: 20%;
-  left: 70%;
-  width: 25%; */
+  top: 29%;
+  left: 63%;
+  width: 15%;
 
   /* animation: pop-up 2s ease-in-out;
   animation-delay: 5s; */
 }
-
+img#img-quote03 {
+  top: 15vh;
+  left: 60%;
+  width: 20%;
+}
 #quote03-txt {
   margin-left: auto;
   margin-right: auto;
   width: 45%;
 }
-
 #quote03-opened {
   width: 60%;
 }
-
 #text03 {
   margin-top: 20vh;
   margin-bottom: 75vh;
@@ -306,57 +254,28 @@ div.quote-opened:hover {
   overflow: auto;
   width: 40%;
 }
-
-#quote03-txt-1 {
-  /* width: 35%; */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#quote03-txt-2 {
-  /* width: 35%; */
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#quote03-txt-3 {
-  /* width: 35%; */
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#quote03-txt-4 {
-  /* width: 35%; */
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-}
 /* End quote 3 */
 
 /* Start quote 4 */
 #quote04-closed {
-  /* top: 65%;
-  left: 5%;
-  width: 25%; */
-
-  top: 65%;
-  left: 5%;
-  width: 25%;
+  top: 66%;
+  left: 7%;
+  width: 15%;
 
   /* animation: pop-up 2s ease-in-out;
   animation-delay: 4s; */
 }
-
+img#img-quote04 {
+  top: 55vh;
+  left: 2%;
+  width: 20%;
+}
 #quote04-txt {
   margin: 0px 140px 0px 10px;
 }
-
 #quote04-opened {
   width: 60%;
 }
-
 #text04 {
   margin-top: 21vh;
   margin-bottom: 75vh;
@@ -373,20 +292,22 @@ div.quote-opened:hover {
 #quote05-closed {
   top: 75%;
   left: 30%;
-  width: 30%;
+  width: 20%;
 
   /* animation: pop-up 2s ease-in-out;
   animation-delay: 6s; */
 }
-
+img#img-quote05 {
+  top: 72vh;
+  left: 29%;
+  width: 20%;
+}
 #quote05-txt {
   margin: 60px 100px 0px 50px;
 }
-
 #quote05-opened {
   width: 80%;
 }
-
 #text05 {
   margin-top: 21vh;
   margin-bottom: 75vh;
@@ -397,36 +318,28 @@ div.quote-opened:hover {
   overflow: auto;
   width: 35%;
 }
-
-#quote05-txt-1 {
-}
-
-#quote05-txt-2 {
-}
 /* End quote 5 */
 
 /* Start quote 6 */
 #quote06-closed {
-  /* top: 65%;
-  left: 60%;
-  width: 35%; */
-
-  top: 60%;
-  left: 63%;
-  width: 40%;
+  top: 75%;
+  left: 75%;
+  width: 20%;
 
   /* animation: pop-up 2s ease-in-out;
   animation-delay: 2s; */
 }
-
+img#img-quote06 {
+  top: 63vh;
+  left: 74%;
+  width: 20%;
+}
 #quote06-txt {
   margin: 50px 100px 0px 70px;
 }
-
 #quote06-opened {
   width: 60%;
 }
-
 #text06 {
   margin-top: 21vh;
   margin-bottom: 75vh;
@@ -436,12 +349,6 @@ div.quote-opened:hover {
   padding: 5px;
   overflow: auto;
   width: 55%;
-}
-
-#quote06-txt-1 {
-}
-
-#quote06-txt-2 {
 }
 /* End quote 6 */
 
