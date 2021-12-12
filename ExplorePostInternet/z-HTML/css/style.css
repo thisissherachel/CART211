@@ -52,22 +52,36 @@ hr {
   border: none;
 }
 
-table {
-  position: absolute;
-  width: auto;
-  margin: auto;
-  padding: 100px 200px;
-}
-
 .intro {
 }
 
-.header {
+/* style the header for the index */
+.myHeader {
   position: fixed;
   z-index: 0;
   padding-top: 30px;
   width: 95%;
   filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
+}
+
+/* style the header for the pages */
+.header {
+  position: fixed;
+  z-index: 100;
+  padding-top: 30px;
+  width: 95%;
+  filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
+
+  transition: 0.5s all ease;
+  transform: scale(0.98);
+  animation: entry 1s linear 1;
+}
+/* Make the header get slightly bigger and go in fron of thee bubbles for the pages */
+.header:hover {
+  cursor: pointer;
+  z-index: 400;
+  transform: scale(1);
+  transition: 0.5s all ease;
 }
 
 /* css links for source of image/links if needed */
@@ -91,31 +105,41 @@ table {
 }
 
 .quote-opened {
-  display: none;
+  display: flex;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  overflow: hidden;
+  text-align: justify;
+  /* transition: all 0.5s ease; */
+}
+img.quotes {
+  display: none;
+  position: fixed;
+  z-index: -1;
   top: 0;
   left: 0;
   right: 0;
   margin: auto;
-  width: 0%;
+  width: 70%;
+  filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
+  transform: scale(1);
   text-align: center;
   overflow: visible;
 
   display: block;
-  position: absolute;
-  text-align: justify;
+  position: fixed;
   align-items: center;
+  text-align: justify;
 }
-/* img.quote-opened {
-  width: 60%;
-} */
 
-h2.quotes {
+h2.img-quotes {
   font-size: 10px;
 }
 
-img.quotes {
+img.img-quotes {
   display: block;
   position: fixed;
   z-index: -10;
@@ -127,25 +151,11 @@ img.quotes {
   animation: entry 1s linear 1;
 }
 
-img.quotes:hover {
+img.img-quotes:hover {
   cursor: pointer;
   transform: scale(1);
   transition: 0.5s all ease;
 }
-
-/* div.quote-closed:hover + div.quote-opened {
-  display: block;
-  position: absolute;
-  text-align: justify;
-  align-items: center;
-}
-
-div.quote-opened:hover {
-  display: block;
-  position: absolute;
-  text-align: justify;
-  align-items: center;
-} */
 
 .text-header {
   color: black;
@@ -175,17 +185,17 @@ img#img-quote01 {
   margin: 50px 50px 0px 50px;
 }
 #quote01-opened {
-  width: 60%;
+  width: 65%;
 }
 #text01 {
-  margin-top: 21vh;
+  margin-top: 30vh;
   margin-bottom: 75vh;
-  height: 60vh;
-  margin-left: auto;
+  height: 55vh;
+  margin-left: 65%;
   margin-right: auto;
   padding: 5px;
   overflow: auto;
-  width: 50%;
+  width: 42%;
 }
 /* End quote 1 */
 
@@ -209,13 +219,13 @@ img#img-quote02 {
   width: 45%;
 }
 #quote02-opened {
-  width: 60%;
+  width: 65%;
 }
 #text02 {
-  margin-top: 25vh;
+  margin-top: 30vh;
   margin-bottom: 75vh;
-  height: 50vh;
-  margin-left: 35%;
+  height: 55vh;
+  margin-left: 65%;
   padding: 5px;
   overflow: auto;
   width: 42%;
@@ -242,17 +252,17 @@ img#img-quote03 {
   width: 45%;
 }
 #quote03-opened {
-  width: 60%;
+  width: 65%;
 }
 #text03 {
-  margin-top: 20vh;
+  margin-top: 30vh;
   margin-bottom: 75vh;
-  height: 60vh;
-  margin-left: auto;
+  height: 55vh;
+  margin-left: 60%;
   margin-right: auto;
   padding: 5px;
   overflow: auto;
-  width: 40%;
+  width: 42%;
 }
 /* End quote 3 */
 
@@ -274,17 +284,17 @@ img#img-quote04 {
   margin: 0px 140px 0px 10px;
 }
 #quote04-opened {
-  width: 60%;
+  width: 65%;
 }
 #text04 {
-  margin-top: 21vh;
+  margin-top: 34vh;
   margin-bottom: 75vh;
-  height: 60vh;
-  margin-left: 100px;
+  height: 55vh;
+  margin-left: 45%;
   margin-right: auto;
   padding: 5px;
   overflow: auto;
-  width: 50%;
+  width: 42%;
 }
 /* End quote 4 */
 
@@ -309,14 +319,14 @@ img#img-quote05 {
   width: 80%;
 }
 #text05 {
-  margin-top: 21vh;
+  margin-top: 35vh;
   margin-bottom: 75vh;
-  height: 60vh;
-  margin-left: 70px;
+  height: 35vh;
+  margin-left: 40%;
   margin-right: auto;
   padding: 5px;
   overflow: auto;
-  width: 35%;
+  width: 42%;
 }
 /* End quote 5 */
 
@@ -338,17 +348,17 @@ img#img-quote06 {
   margin: 50px 100px 0px 70px;
 }
 #quote06-opened {
-  width: 60%;
+  width: 75%;
 }
 #text06 {
-  margin-top: 21vh;
+  margin-top: 32vh;
   margin-bottom: 75vh;
   height: 60vh;
-  margin-left: 300px;
+  margin-left: 50%;
   margin-right: auto;
   padding: 5px;
   overflow: auto;
-  width: 55%;
+  /* width: 50%; */
 }
 /* End quote 6 */
 
