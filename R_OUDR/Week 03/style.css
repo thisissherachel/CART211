@@ -1,0 +1,90 @@
+
+
+
+header {
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  padding: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: courier;
+}
+
+.header {
+  padding: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 20px;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+p {
+  color: black;
+  font-size: 12px;
+}
+
+.blue {
+  color: blue;
+  font-size: 20px;
+}
+
+body {
+  background-image: url("a-background-image.jpg");
+  background-size: cover;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+}
+
+tr {
+
+}
+
+.blog {
+  background-color: MEDIUMTURQUOISE;
+  padding: 50px;
+  font-family: courier;
+}
+
+.blogheader {
+  color: white;
+}
+
+.blogentry {
+}
+
+button{
+  border: none;
+  text-align: center;
+}
+
+a { /* how should i organize this button situation */
+  text-decoration: none;
+  font-family: courier;
+  color: white;
+}
+
+.source {
+  background-color: rgba(255, 255, 255, 0.25);
+  font-size: 12px;
+  font-weight: 300; /* doesn't work?? */
+  padding: 10px 30px 10px 30px;
+  transition-duration: 0.4s;
+}
+
+.source:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
