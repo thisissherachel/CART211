@@ -1,0 +1,459 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  padding: 5px 30px;
+  width: 300px;
+}
+
+/* css for the "Explore Post-Internet Art" object */
+/* css for pages with explanation on the quotes */
+.header {
+  position: fixed;
+  z-index: 100; /* on top of everything else */
+  padding-top: 30px;
+  width: 95%; /* how big it is */
+  filter: drop-shadow(
+    -10px -10px 10px rgba(0, 0, 0, 0.25)
+  ); /* Create a shadow under it */
+
+  transition: 0.5s all ease; /* make a smooth transition */
+  transform: scale(0.98); /* the scale of the header whitout hovering over it */
+  animation: entry 1s linear 1;
+}
+/* Make the header get slightly bigger when hovered over */
+.header:hover {
+  cursor: pointer; /* change cursor */
+  /* z-index: 400;  */
+  transform: scale(1); /* make it bigger */
+  transition: 0.5s all ease; /* smooth transition */
+}
+/* Css for header in the index page (no animation when hovered over) */
+.myHeader {
+  position: fixed;
+  z-index: 0;
+  padding-top: 30px;
+  width: 95%;
+  filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* no scrolling */
+
+  font-family: tenby-five, sans-serif; /* font used */
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* css for the background div */
+#myBackground {
+  position: fixed; /* doesn't move around */
+  z-index: -100; /* put it behind everyhting else */
+}
+
+/* css for the headings and paragraphs of the site */
+h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+}
+h3 {
+  font-size: 18px;
+}
+p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.intro {
+}
+
+/* css for the divs containing the bubbles and quotes on the index page (the small ones) */
+.quote-closed {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  overflow: hidden;
+}
+/* css for the quotes inside the small bubbles */
+h2.img-quotes {
+  font-size: 15px;
+  transition: 0.5s all ease;
+  transform: scale(0.65);
+  animation: entry 1s linear 1;
+}
+/* css for the images of the small bubbles */
+img.img-quotes {
+  display: block;
+  position: fixed;
+  z-index: -10;
+  width: inherit;
+  margin: auto;
+  filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
+  transition: 0.5s all ease;
+  transform: scale(0.65);
+  animation: entry 1s linear 1;
+}
+/* css to make the small bubbles bigger when hovered over */
+/* img.img-quotes:hover {
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.5s all ease;
+} */
+
+/* css for the divs containing the bubbles and quotes on the quote pages (the big ones) */
+.quote-opened {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  overflow: hidden;
+  text-align: justify;
+}
+/* css for the images of the bubbles */
+img.quotes {
+  display: none;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 70%;
+  filter: drop-shadow(
+    -10px -10px 10px rgba(0, 0, 0, 0.25)
+  ); /* create a shadow */
+  transform: scale(1);
+  text-align: center;
+  overflow: visible; /* can scroll down */
+
+  display: block;
+  position: fixed;
+  align-items: center;
+  text-align: justify; /* text justify */
+}
+/* css for the quotes in the quote pages */
+.text-header {
+  color: black;
+}
+/* css for the expalanation of the quotes in the quote pages */
+.text-body {
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+/* Start quote 1 */
+/* small quote */
+#quote01-closed {
+  top: 15%;
+  left: 4%;
+  width: 15%;
+  /* padding: 50px; */
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 1s; */
+}
+/* small quote's image */
+img#img-quote01 {
+  top: 0vh;
+  left: 0%;
+  width: 20%;
+}
+/* small quote's text */
+#quote01-txt {
+  /* margin: 50px 50px 0px 50px; */
+}
+/* big quote */
+#quote01-opened {
+  width: 65%;
+}
+/* big quote's text */
+#text01 {
+  margin-top: 30vh;
+  margin-bottom: 75vh;
+  height: 55vh;
+  margin-left: 65%;
+  margin-right: auto;
+  padding: 5px;
+  overflow: auto;
+  width: 42%;
+}
+/* End quote 1 */
+
+/* Start quote 2 */
+/* small quote */
+#quote02-closed {
+  top: 37vh;
+  left: 24%;
+  width: 25%;
+
+  /* background-image: url("/assets/images/asset2@3000x.png"); */
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 2.5s; */
+}
+/* small quote's image */
+img#img-quote02 {
+  top: 30vh;
+  left: 30%;
+  width: 20%;
+}
+/* small quote's text */
+#quote02-txt {
+  margin-left: 170px;
+  margin-right: auto;
+  width: 45%;
+}
+/* big quote */
+#quote02-opened {
+  width: 65%;
+}
+/* big quote's text */
+#text02 {
+  margin-top: 30vh;
+  margin-bottom: 75vh;
+  height: 55vh;
+  margin-left: 65%;
+  padding: 5px;
+  overflow: auto;
+  width: 42%;
+}
+/* End quote 2 */
+
+/* Start quote 3 */
+/* small quote */
+#quote03-closed {
+  top: 29vh;
+  left: 62%;
+  width: 17%;
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 5s; */
+}
+/* small quote's image */
+img#img-quote03 {
+  top: 15vh;
+  left: 60%;
+  width: 20%;
+}
+/* small quote's text */
+#quote03-txt {
+  /* margin-left: auto;
+  margin-right: auto;
+  width: 45%; */
+}
+/* big quote */
+#quote03-opened {
+  width: 65%;
+}
+/* big quote's text */
+#text03 {
+  margin-top: 30vh;
+  margin-bottom: 75vh;
+  height: 55vh;
+  margin-left: 60%;
+  margin-right: auto;
+  padding: 5px;
+  overflow: auto;
+  width: 42%;
+}
+/* End quote 3 */
+
+/* Start quote 4 */
+/* small quote */
+#quote04-closed {
+  top: 65%;
+  left: 4%;
+  width: 21%;
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 4s; */
+}
+/* small quote's image */
+img#img-quote04 {
+  top: 55vh;
+  left: 2%;
+  width: 20%;
+}
+/* small quote's text */
+#quote04-txt {
+  margin: 0px 140px 0px 10px;
+}
+/* big quote */
+#quote04-opened {
+  width: 65%;
+}
+/* big quote's text */
+#text04 {
+  margin-top: 34vh;
+  margin-bottom: 75vh;
+  height: 55vh;
+  margin-left: 45%;
+  margin-right: auto;
+  padding: 5px;
+  overflow: auto;
+  width: 42%;
+}
+/* End quote 4 */
+
+/* Start quote 5 */
+/* small quote */
+#quote05-closed {
+  top: 72%;
+  left: 29%;
+  width: 20%;
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 6s; */
+}
+/* small quote's image */
+img#img-quote05 {
+  top: 72vh;
+  left: 29%;
+  width: 20%;
+}
+/* small quote's text */
+#quote05-txt {
+  margin: 60px 100px 0px 50px;
+}
+/* big quote */
+#quote05-opened {
+  width: 80%;
+}
+/* big quote's text */
+#text05 {
+  margin-top: 35vh;
+  margin-bottom: 75vh;
+  height: 35vh;
+  margin-left: 40%;
+  margin-right: auto;
+  padding: 5px;
+  overflow: auto;
+  width: 42%;
+}
+/* End quote 5 */
+
+/* Start quote 6 */
+/* small quote */
+#quote06-closed {
+  top: 70vh;
+  left: 76%;
+  width: 20%;
+
+  /* animation: pop-up 2s ease-in-out;
+  animation-delay: 2s; */
+}
+/* small quote's image */
+img#img-quote06 {
+  top: 63vh;
+  left: 74%;
+  width: 20%;
+}
+/* small quote's text */
+#quote06-txt {
+  margin: 50px 100px 0px 70px;
+}
+/* big quote */
+#quote06-opened {
+  width: 75%;
+}
+/* big quote's text */
+#text06 {
+  margin-top: 32vh;
+  margin-bottom: 75vh;
+  height: 60vh;
+  margin-left: 50%;
+  margin-right: auto;
+  padding: 5px;
+  overflow: auto;
+  /* width: 50%; */
+}
+/* End quote 6 */
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+
+/* smaller screens */
+@media screen and (max-width: 1500px) {
+  .quote-closed {
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* tablets */
+@media screen and (max-width: 1250px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .quote-closed {
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* phones */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .quote-closed {
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+  }
+}
