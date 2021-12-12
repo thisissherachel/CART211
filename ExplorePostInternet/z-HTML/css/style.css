@@ -83,7 +83,7 @@ p {
 /* css for the divs containing the bubbles and quotes on the index page (the small ones) */
 .quote-closed {
   display: flex;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   align-items: center;
   text-align: center;
@@ -92,7 +92,10 @@ p {
 }
 /* css for the quotes inside the small bubbles */
 h2.img-quotes {
-  font-size: 10px;
+  font-size: 15px;
+  transition: 0.5s all ease;
+  transform: scale(0.65);
+  animation: entry 1s linear 1;
 }
 /* css for the images of the small bubbles */
 img.img-quotes {
@@ -107,11 +110,11 @@ img.img-quotes {
   animation: entry 1s linear 1;
 }
 /* css to make the small bubbles bigger when hovered over */
-img.img-quotes:hover {
+/* img.img-quotes:hover {
   cursor: pointer;
   transform: scale(1);
   transition: 0.5s all ease;
-}
+} */
 
 /* css for the divs containing the bubbles and quotes on the quote pages (the big ones) */
 .quote-opened {
@@ -160,9 +163,10 @@ img.quotes {
 /* Start quote 1 */
 /* small quote */
 #quote01-closed {
-  top: 10%;
+  top: 15%;
   left: 4%;
   width: 15%;
+  /* padding: 50px; */
 
   /* animation: pop-up 2s ease-in-out;
   animation-delay: 1s; */
@@ -170,12 +174,12 @@ img.quotes {
 /* small quote's image */
 img#img-quote01 {
   top: 0vh;
-  left: 1%;
+  left: 0%;
   width: 20%;
 }
 /* small quote's text */
 #quote01-txt {
-  margin: 50px 50px 0px 50px;
+  /* margin: 50px 50px 0px 50px; */
 }
 /* big quote */
 #quote01-opened {
@@ -197,9 +201,11 @@ img#img-quote01 {
 /* Start quote 2 */
 /* small quote */
 #quote02-closed {
-  top: 41%;
-  left: 26%;
-  width: 18%;
+  top: 37vh;
+  left: 24%;
+  width: 25%;
+
+  /* background-image: url("/assets/images/asset2@3000x.png"); */
 
   /* animation: pop-up 2s ease-in-out;
   animation-delay: 2.5s; */
@@ -235,9 +241,9 @@ img#img-quote02 {
 /* Start quote 3 */
 /* small quote */
 #quote03-closed {
-  top: 29%;
-  left: 63%;
-  width: 15%;
+  top: 29vh;
+  left: 62%;
+  width: 17%;
 
   /* animation: pop-up 2s ease-in-out;
   animation-delay: 5s; */
@@ -250,9 +256,9 @@ img#img-quote03 {
 }
 /* small quote's text */
 #quote03-txt {
-  margin-left: auto;
+  /* margin-left: auto;
   margin-right: auto;
-  width: 45%;
+  width: 45%; */
 }
 /* big quote */
 #quote03-opened {
@@ -274,9 +280,9 @@ img#img-quote03 {
 /* Start quote 4 */
 /* small quote */
 #quote04-closed {
-  top: 66%;
-  left: 7%;
-  width: 15%;
+  top: 65%;
+  left: 4%;
+  width: 21%;
 
   /* animation: pop-up 2s ease-in-out;
   animation-delay: 4s; */
@@ -311,8 +317,8 @@ img#img-quote04 {
 /* Start quote 5 */
 /* small quote */
 #quote05-closed {
-  top: 75%;
-  left: 30%;
+  top: 72%;
+  left: 29%;
   width: 20%;
 
   /* animation: pop-up 2s ease-in-out;
@@ -348,8 +354,8 @@ img#img-quote05 {
 /* Start quote 6 */
 /* small quote */
 #quote06-closed {
-  top: 75%;
-  left: 75%;
+  top: 70vh;
+  left: 76%;
   width: 20%;
 
   /* animation: pop-up 2s ease-in-out;
