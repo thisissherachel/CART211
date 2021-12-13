@@ -33,12 +33,16 @@ header {
 }
 /* Css for header in the index page (no animation when hovered over) */
 .myHeader {
-  position: fixed;
+  display: block;
   z-index: 0;
-  padding-top: 30px;
-  padding-left: 30px;
   width: 95%;
+  padding-top: 30px;
+  padding left: 20px;
   filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.25));
+}
+
+#myHeader-main {
+  width: 80%;
 }
 
 body {
@@ -76,10 +80,6 @@ h3 {
 p {
   font-size: 18px;
   font-weight: 500;
-}
-a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
 }
 hr {
   border: none;
@@ -212,7 +212,7 @@ img.quotes {
 /* Start quote 1 */
 /* small quote */
 #quote01-closed {
-  top: 12%;
+  top: 15%;
   left: 4%;
   width: 15%;
   /* padding: 50px; */
@@ -228,7 +228,6 @@ img#img-quote01 {
 }
 /* small quote's text */
 #quote01-txt {
-  color: #ff8f0f;
   /* margin: 50px 50px 0px 50px; */
 }
 /* big quote */
@@ -251,9 +250,9 @@ img#img-quote01 {
 /* Start quote 2 */
 /* small quote */
 #quote02-closed {
-  top: 45vh;
-  left: 30%;
-  width: 28%;
+  top: 37vh;
+  left: 24%;
+  width: 25%;
 
   /* background-image: url("/assets/images/asset2@3000x.png"); */
 
@@ -264,7 +263,7 @@ img#img-quote01 {
 img#img-quote02 {
   top: 30vh;
   left: 30%;
-  width: 30%;
+  width: 20%;
 }
 /* small quote's text */
 #quote02-txt {
@@ -291,9 +290,9 @@ img#img-quote02 {
 /* Start quote 3 */
 /* small quote */
 #quote03-closed {
-  top: 35vh;
-  left: 70%;
-  width: 15%;
+  top: 29vh;
+  left: 62%;
+  width: 17%;
 
   /* animation: pop-up 2s ease-in-out;
   animation-delay: 5s; */
@@ -302,7 +301,7 @@ img#img-quote02 {
 img#img-quote03 {
   top: 15vh;
   left: 60%;
-  width: 35%;
+  width: 20%;
 }
 /* small quote's text */
 #quote03-txt {
@@ -331,7 +330,7 @@ img#img-quote03 {
 /* small quote */
 #quote04-closed {
   top: 65%;
-  left: 7%;
+  left: 4%;
   width: 21%;
 
   /* animation: pop-up 2s ease-in-out;
@@ -341,7 +340,7 @@ img#img-quote03 {
 img#img-quote04 {
   top: 55vh;
   left: 2%;
-  width: 25%;
+  width: 20%;
 }
 /* small quote's text */
 #quote04-txt {
@@ -367,18 +366,18 @@ img#img-quote04 {
 /* Start quote 5 */
 /* small quote */
 #quote05-closed {
-  top: 78%;
-  left: 32%;
-  width: 30%;
+  top: 72%;
+  left: 29%;
+  width: 20%;
 
   /* animation: pop-up 2s ease-in-out;
   animation-delay: 6s; */
 }
 /* small quote's image */
 img#img-quote05 {
-  top: 68vh;
+  top: 72vh;
   left: 29%;
-  width: 35%;
+  width: 20%;
 }
 /* small quote's text */
 #quote05-txt {
@@ -413,9 +412,9 @@ img#img-quote05 {
 }
 /* small quote's image */
 img#img-quote06 {
-  top: 50vh;
-  left: 60%;
-  width: 40%;
+  top: 63vh;
+  left: 74%;
+  width: 20%;
 }
 /* small quote's text */
 #quote06-txt {
