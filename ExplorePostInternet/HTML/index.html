@@ -1,70 +1,77 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Explore Post-Internet Art</title>
 
-<head>
-  <title>Explore Post-Internet Art</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      width="device-width,"
+      initial-scale="1.0,"
+      maximum-scale="1.0,"
+      user-scalable="0"
+    />
 
-  <meta charset="utf-8" />
-  <meta name="viewport" width="device-width," initial-scale="1.0," maximum-scale="1.0,"
-    user-scalable="0" />
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/dom5sef.css" />
 
-  <!-- CSS stylesheet -->
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!-- fonts -->
-  <link rel="stylesheet" href="https://use.typekit.net/dom5sef.css" />
+    <!-- p5.js library scripts -->
+    <script src="js/libraries/p5.min.js"></script>
+    <script src="js/libraries/p5.sound.min.js"></script>
 
-  <!-- p5.js library scripts -->
-  <script src="js/libraries/p5.min.js"></script>
-  <script src="js/libraries/p5.sound.min.js"></script>
+    <!-- javascript scripts -->
+    <script src="js/myBackground.js"></script>
+  </head>
 
-  <!-- javascript scripts -->
-  <script src="js/myBackground.js"></script>
-</head>
+  <body>
+    <!-- p5.js background -->
+    <div id="myBackground"></div>
 
-<body>
-  <!-- p5.js background -->
-  <div id="myBackground"></div>
+    <!-- header floating on the page -->
+    <div class="myHeader" id="myHeader">
+      <a href="main.html">
+        <img class="header" src="assets/header-animation.gif" />
+      </a>
+    </div>
 
-  <!-- header floating on the page -->
-  <div class="myHeader" id="myHeader">
-    <a href="main.html">
-      <img class="header" src="assets/header-animation.gif" />
-    </a>
-  </div>
+    <!-- intro page with header and explanation page -->
+    <div class="intro">
+      <h1 id="intro-header">
+        Welcome!
+      </h1>
+      <hr />
+      <p id="intro-text">
+        Here we explore Artie Vierkant’s piece on The Image Object Post-Internet
+        <br />
+        where they discuss the concept of Post-Internet art.
+        <br />
+        <br />
+        <i id="intro-quote">
+          Post-Internet Art as described by Vierkant for the context of their
+          piece is “a result of the contemporary moment: inherently informed by
+          ubiquitous authorship, the development of attention as currency, the
+          collapse of physical space in networked culture, and the infinite
+          reproducibility and mutability of digital materials.”</i
+        >
+        <br />
+        <br />
+        Be exposed to a few quotes taken from Vierkant’s piece, ponder them,
+        <br />
+        then dive into the Post-Internet art discussion.
+      </p>
+      <hr />
+      <hr />
+      <h3 id="intro-subheader">
+        Click
+        <br />
+        <img src="assets/images/header.png" style="height: 100px;" />
+        <br />
+        to begin exploring!
+      </h3>
+    </div>
 
-  <!-- intro page with header and explanation page -->
-  <div class="intro">
-
-    <h1 id="intro-header">
-      Welcome!
-    </h1>
-    <hr>
-    <p id="intro-text">
-      Here we explore Artie Vierkant’s piece on The Image Object Post-Internet <br>
-      where they discuss the concept of Post-Internet art.
-      <br>
-      <br>
-      <i id="intro-quote">
-        Post-Internet Art as described by Vierkant for the context of their piece
-        is “a result of the contemporary moment: inherently informed by ubiquitous authorship, the
-        development of attention as currency, the collapse of physical space in networked culture,
-        and the infinite reproducibility and mutability of digital materials.”</i>
-      <br>
-      <br>
-      Be exposed to a few quotes taken from Vierkant’s piece, ponder them, <br>
-      then dive into the Post-Internet art discussion.
-    </p>
-    <hr>
-    <hr>
-    <h3 id="intro-subheader">
-      Click <br>
-      <img src="assets/images/header.png" style="height: 100px;" /> <br>
-      to begin exploring!
-    </h3>
-
-  </div>
-
-  <script src=" js/script.js"></script>
-</body>
-
+    <script src=" js/script.js"></script>
+  </body>
 </html>
