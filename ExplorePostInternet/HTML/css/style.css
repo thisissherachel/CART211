@@ -77,17 +77,13 @@ hr {
 
 .intro {
   display: block;
-  width: 60%;
-  margin-top: 40vh;
-  margin-bottom: 75vh;
-  height: 55vh;
-  /* padding-top: 20%; */
-  margin-left: auto;
-  margin-right: auto;
+  width: 75%;
+  height: 100%;
+  padding-top: 20%;
+  margin: auto;
   text-align: center;
   justify-content: center;
-  overflow: auto;
-  /* overflow-x: visible; */
+  overflow-y: auto;
 }
 
 h1#intro-header {
